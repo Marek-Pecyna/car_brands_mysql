@@ -1,0 +1,355 @@
+ /* open-sans-regular - latin */
+ @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+	font-stretch: 100%;
+	/* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url('../fonts/open-sans-v40-latin-regular.woff2') format('woff2'),
+	/* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+         url('../fonts/open-sans-v40-latin-regular.ttf') format('truetype'); 
+	
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+* {
+	scrollbar-width: auto !important;
+	box-sizing: border-box;
+}
+
+html, body {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	font-family: 'Open Sans';
+	background-color: #EAEDF8;
+}
+
+header {
+	overflow: hidden;
+	background-color: white;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	/* height: 80px; */
+	height: 5rem;
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+	padding-left: 8px;
+	display: flex; 
+	align-items: center;
+	justify-content: space-between;
+}
+
+header a {
+	text-decoration: none;
+	color: black;
+}
+
+header a:hover {
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+.username {
+	display: flex;
+	align-items: center;
+	margin-right: 16px;
+}
+
+.avatar {
+	width: 16px;
+	height: 16px;
+	border-radius: 100%;
+	background-color: #746CF5;
+	padding: 16px;
+	color: white;
+	display: flex; /* arrange items freely */
+	justify-content: center; /* X-axis */
+	align-items: center; /* Y-axis */
+	margin-right: 8px;
+}
+
+/* ------------------ */
+/* NAVIGATION SIDEBAR */
+/* ------------------ */
+nav {
+	/* width: 160px; */
+	width: 10rem;
+	top: 80px;
+	bottom: 30px;
+	
+	padding-top: 24px;
+	padding-left: 8px;
+	padding-right: 8px;
+
+	background-color: #746CF5;
+	color: white;
+	font-size: 1.3em;
+	position: fixed;
+}
+
+nav a {
+	text-decoration: none;
+	color: white;
+	display: flex;
+	align-items: center;
+}
+
+nav img {
+	margin-right: 8px;
+}
+
+nav a:hover {
+	background-color: rgba(255, 255, 255, 0.1);
+}
+
+.welcome {
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+	background-color: #746CF5;
+}
+
+.welcome a {
+	text-decoration: none;
+	color: white;
+	display: flex;
+	align-items: center;
+}
+
+.custom-table {
+	padding: 0px;
+}
+
+.custom-table a {
+	text-decoration: none;
+	color: black;
+}
+
+.custom-table th, .custom-table td {
+	padding: 10px;
+	border: 2px solid white;
+}
+
+/* Spezielle Pseudoklasse für Zeilen */
+.custom-table tbody td {
+	background-color: #746CF5;
+}
+
+.custom-table tbody th {
+	text-align: left;
+}
+
+main {
+	position: fixed;
+	/* left: 160px; */
+	left: 10rem;
+	right: 0px;
+	/* top: 80px; */
+	top: 5rem;
+	/* bottom: 30px; */
+	bottom: 2rem;
+	padding: 16px;
+}
+
+/* Add media queries for responsiveness - when the screen is 700px wide or less: then do the following: */
+@media screen and (max-width: 700px) {
+
+	/* Reduce size of navigation sidebar */
+	nav { 
+		width: 40px;
+		top: 0px;
+		bottom: 0px;
+	}
+
+	nav span { display: none; }
+
+	/* Hide header and footer*/
+	header { display: none; }
+	footer { display: none; }
+
+	/* Reduce left and top and bottom margin of main container */
+	main {
+		position: fixed;
+		left: 40px;
+		right: 0px;
+		bottom: 0px;
+		top: 0px;
+		padding: 2px;
+	}
+
+	/* Reduce size of buttons in show frame */
+	.card_buttons span {
+		display: none;
+	}
+  }
+
+.content_box {
+	overflow: scroll;
+	position: relative;
+	width: 100%;
+	height: 100%;
+
+	background-color: white;
+	border-radius: 8px;
+	padding: 16px;
+	padding-bottom: 16px !important;
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+
+.scroll_box {
+	width: 100%;
+	max-height: 75%;
+	
+	padding-right: 16px;
+	margin-bottom: 8px;
+	border: 2px #666 solid;
+	overflow-y: scroll;
+}
+
+.card {
+	background-color: rgba(0, 0, 0, 0.05);
+	margin-bottom: 16px;
+	border-radius: 8px;
+	padding: 8px;
+	padding-left: 64px;
+	min-height: 48px;
+	position: relative;
+	overflow-wrap: break-word;
+	
+}
+
+.car_picture {
+	width: 48px;
+	height: 48px;
+	border-radius: 25%;
+	border: 2px solid white;
+	position: absolute;
+	left: 8px;
+	margin-right: 8px;
+}
+
+.bottom_centered {
+	position: absolute;
+	top: 36px;
+	left: 16px;
+	margin-right: 8px;
+	font-size: 0.8em;
+}
+
+.card_buttons {
+	display: flex;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+
+.edit_button {
+	display: flex;
+	align-items: center;
+	background-color: black;
+	padding: 4px;
+	color: white;
+	border-radius: 4px;
+}
+
+.edit_button:hover {
+	background-color: yellowgreen;
+	color: white;
+}
+
+.delete_button {
+	display: flex;
+	align-items: center;
+	background-color: black;
+	padding: 4px;
+	color: white;
+	border-radius: 4px;
+
+}
+
+.delete_button:hover {
+	background-color: #FF0000;
+	color: white;
+}
+
+.cancel_button {
+	display: flex;
+	align-items: center;
+	background-color: black;
+	padding: 4px;
+	color: white;
+	border-radius: 4px;
+
+}
+
+.cancel_button:hover {
+	background-color: grey;
+	color: white;
+}
+
+.add_button {
+	display: flex;
+	align-items: center;
+	background-color: black;
+	padding: 4px;
+	color: white;
+	border-radius: 4px;
+
+}
+
+.add_button:hover {
+	background-color: yellowgreen;
+	color: white;
+}
+
+input[type='text'] {
+	font-size: 1.3em;
+	font-family: monospace;
+	min-width: 100px;
+	width: 100%;
+}
+
+button[type='submit'] {
+	font-size: 1.1em;
+}
+
+.fancy_input {
+	margin: 1em 0 1em 0;
+	position: relative;
+}
+
+.fancy_input input {
+	padding: .5em;
+}
+
+.fancy_input label {
+	position: absolute;
+	color: #666;
+	background: #fff;
+	padding: 0 .5em;
+	font-size: .8em;
+	top: -.6em;
+	left: .5em;
+}
+
+/* ------------------ */
+/* FOOTER             */
+/* ------------------ */
+footer {
+	padding: 5px;
+	/* height: 30px; */
+	height: 2rem;
+	text-align: center;
+	background-color: #343434;
+	color: white;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+footer a {
+	text-decoration: none;
+	color: white;
+}

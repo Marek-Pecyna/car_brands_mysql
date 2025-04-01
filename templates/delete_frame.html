@@ -1,0 +1,23 @@
+<h2>Diese Automarke wirklich löschen?</h2>
+<div class='card'>
+	<img class='car_picture' src='./img/car.jpg'>
+	<b><?= $brand ?></b>
+	<br>
+	<?= $company ?>
+	<div class='card_buttons'>
+		<form action='./data/formhandler.php' method='post'>
+			<input type='hidden' name='action' value='delete'>
+			<button class='delete_button' type='submit' name='id' value='<?= $id ?>'>
+			<img src='./img/delete.svg'>
+			Löschen
+			</button>
+		</form>							
+		<form action='?page=show' method='post'>
+			<button class='cancel_button' type='submit'>
+			<img src='./img/cancel.svg'>
+			Abbruch
+			</button>
+		</form>
+
+	</div><!--'card_buttons'-->
+</div><!--'card'-->

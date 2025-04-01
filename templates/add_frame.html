@@ -1,0 +1,22 @@
+<h2>Neue Automarke hinzufügen</h2>
+<hr>
+<form action='./data/formhandler.php' method='POST'>
+	<div class='fancy_input'>
+		<label for='brand'>Markenname</label>
+		<input id='brand' type='text' placeholder='Bitte Markenname eingeben.' name='brand' required>
+	</div>
+	<div class='fancy_input'>
+		<label for='company'>Hersteller</label>
+		<input id='company' type='text' placeholder='Bitte Hersteller eingeben.' name='company' required>
+	</div>
+	<button class='add_button' type='submit' name='action' value='add'  >
+		<img src='./img/add.svg'>
+		Hinzufügen
+	</button>
+</form>
+<form action='?page=show' method='POST'>
+	<button class='cancel_button' type='submit' name='action' value='abort'>
+		<img src='./img/cancel.svg'>
+		Abbruch
+	</button>
+</form>

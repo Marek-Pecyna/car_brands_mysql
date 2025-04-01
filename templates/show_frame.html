@@ -1,0 +1,23 @@
+<div class='card'>
+	<img class='car_picture' src='./img/car.jpg'>
+	<div class="bottom_centered"><?= "#".$id ?></div>
+	<b><?= $brand ?></b><br>
+	<?= $company ?><br>
+
+	<div class='card_buttons'>
+		<form action='?page=delete' method='post'>
+			<button class='delete_button' title="Automarken löschen" type='submit' name='delete' value='<?= $id ?>'>
+			<img src='./img/delete.svg'>
+			<span>Löschen</span>
+			</button>
+		</form>
+		<form action='?page=edit' method='post'>
+			<button class='edit_button' title="Automarken bearbeiten" type='submit' name='edit' value='<?= $id ?>'>
+			<img src='./img/edit.svg'>
+			<span>Bearbeiten</span>
+			</button>
+		</form>
+	</div><!--'card_buttons'-->
+	
+</div><!--'card'-->
+
