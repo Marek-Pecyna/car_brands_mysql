@@ -1,6 +1,6 @@
 <h2>Automarke bearbeiten</h2>
 Datenbank-Eintrag Nr. <?= $id ?> bearbeiten:
-<form action='./data/formhandler.php' method='POST'>
+<form action='?page=edit' method='POST'>
 	<div class='fancy_input'>
 		<label for='brand'>Markenname</label>
 		<input type='text' name='brand' value='<?= $brand ?>' required>
@@ -10,7 +10,7 @@ Datenbank-Eintrag Nr. <?= $id ?> bearbeiten:
 		<input type='text' name='company' value='<?= $company ?>' required>
 	</div>
 	<input type='hidden' name='id' value='<?= $id ?>'>
-	<button class='edit_button' type='submit' name='action' value='edit' >
+	<button class='edit_button' type='submit' name='action' value='edit_confirmed' >
 		<img src='./img/edit.svg'>
 		Ändern
 	</button>

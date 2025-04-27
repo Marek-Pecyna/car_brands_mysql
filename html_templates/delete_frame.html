@@ -5,14 +5,14 @@
 	<br>
 	<?= $company ?>
 	<div class='card_buttons'>
-		<form action='./data/formhandler.php' method='post'>
-			<input type='hidden' name='action' value='delete'>
-			<button class='delete_button' type='submit' name='id' value='<?= $id ?>'>
+		<form action='./index.php' method='POST'>
+			<input type='hidden' name='id' value='<?= $id ?>'>
+			<button class='delete_button' type='submit' name='action' value='delete_confirmed'>
 			<img src='./img/delete.svg'>
 			Löschen
 			</button>
 		</form>							
-		<form action='?page=show' method='post'>
+		<form action='?page=show' method='POST'>
 			<button class='cancel_button' type='submit'>
 			<img src='./img/cancel.svg'>
 			Abbruch

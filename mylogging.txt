@@ -1,0 +1,20 @@
+[27:04:2025-19:58:59] Model::__construct: Object created.
+[27:04:2025-19:58:59] View::__construct: Object created.
+[27:04:2025-19:58:59] Controller::__construct: Object created.
+[27:04:2025-20:04:13] Controller::editCar: Parsed Parameters: #'8', Brand: 'Swift', Company: 'Subaru Motors'.
+[27:04:2025-20:04:13] Model::isManufacturerKnown: true (id #8)
+[27:04:2025-20:04:13] Model::isBrandKnown: false
+[27:04:2025-20:04:13] Controller::editCar: Return: #'8' edited.
+[27:04:2025-20:04:38] Controller::editCar: Parsed Parameters: #'18', Brand: 'Maybach', Company: 'Daimler-Benz'.
+[27:04:2025-20:04:38] Model::isManufacturerKnown: true (id #15)
+[27:04:2025-20:04:38] Model::isBrandKnown: true (id #23)
+[27:04:2025-20:04:38] Controller::editCar: Return: #'' edited.
+[27:04:2025-20:05:05] Controller::deleteCar: #'44' deleted.
+[27:04:2025-20:07:08] Controller::editCar: Parsed Parameters: #'18', Brand: 'Maybach', Company: 'Daimler-Benz'.
+[27:04:2025-20:07:08] Model::isManufacturerKnown: true (id #15)
+[27:04:2025-20:07:08] Model::isBrandKnown: true (id #23)
+[27:04:2025-20:07:08] Controller::editCar: Return: Nothing edited, brand/company combination already present.
+[27:04:2025-20:11:51] Controller::editCar: Parsed Parameters: #'18', Brand: 'Maybach', Company: 'Daimler-Benz'.
+[27:04:2025-20:11:51] Model::isManufacturerKnown: true (id #15)
+[27:04:2025-20:11:51] Model::isBrandKnown: true (id #23)
+[27:04:2025-20:11:51] Controller::editCar: Return: Nothing edited, brand/company combination already present.

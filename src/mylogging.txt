@@ -1,0 +1,7 @@
+[27:04:2025-20:01:42] Controller::__construct: Object created.
+[27:04:2025-20:01:57] Model::__construct: Object created.
+[27:04:2025-20:02:11] View::__construct: Object created.
+[27:04:2025-20:53:21] Controller::__construct: Object created.
+[27:04:2025-21:23:51] Controller::__construct: Object created.
+[27:04:2025-21:23:57] Model::__construct: Object created.
+[27:04:2025-21:24:05] View::__construct: Object created.
