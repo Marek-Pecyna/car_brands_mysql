@@ -114,12 +114,6 @@ Each class can be called up directly and then displays following information:
 
 ```
 
-## New in Version 0.3
- * 
-
-## Ideas for further improvements
- * Update information (e.g. “Data such-and-such has been added”) could be displayed as HTML/CSS popovers, e.g. similar to https://mdn.github.io/dom-examples/popover-api/blur-background/
-
 
 
 
